@@ -1,0 +1,51 @@
+
+Git + GitHub Cheat Sheet
+=========================
+
+🔧 Setup (First Time Only)
+---------------------------
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+📥 Clone a GitHub Repository
+-----------------------------
+git clone https://github.com/yourusername/repo-name.git
+cd repo-name
+
+📄 Make Changes
+----------------
+# Check status
+git status
+
+# Stage changes
+git add filename.txt      # Add specific file
+git add .                 # Add all changes
+
+# Commit changes
+git commit -m "Your message here"
+
+# Push to GitHub
+git push
+
+🔄 Keep Your Repo Up-to-Date
+-----------------------------
+git pull
+
+📁 Create and Use a New Branch
+-------------------------------
+git checkout -b new-feature
+git checkout main
+git merge new-feature
+
+🧹 Undo Things
+---------------
+git restore filename.txt         # Undo changes to a file
+git reset HEAD filename.txt      # Unstage a file
+git log                          # Show commit history
+
+✍️ Best Practices
+------------------
+- Use `git status` often.
+- Commit with clear messages.
+- Don’t push broken code.
+- Pull regularly to avoid conflicts.
